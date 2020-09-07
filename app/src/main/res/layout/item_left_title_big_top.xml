@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150px"
+    android:layout_height="200px"
+    android:background="#dfdfdf">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="75px"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="118:120"
+        app:layout_constraintEnd_toEndOf="@id/tv_current" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_start_round"
+        app:layout_constraintBottom_toBottomOf="@id/tv_current"
+        app:layout_constraintStart_toStartOf="@id/tv_current"
+        app:layout_constraintTop_toTopOf="@id/tv_current" />
+
+    <TextView
+        android:id="@+id/tv_current"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:gravity="center"
+        android:paddingStart="20px"
+        android:paddingEnd="20px"
+        android:textColor="#383838"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="美妆" />
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center"
+        android:textColor="#383838"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_current" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

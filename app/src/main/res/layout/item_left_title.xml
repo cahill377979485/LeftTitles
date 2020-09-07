@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150px"
+    android:layout_height="100px"
+    android:background="#dfdfdf">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingStart="20px"
+        android:paddingEnd="20px"
+        android:textColor="#383838"
+        android:textSize="15sp"
+        tools:text="美妆" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
